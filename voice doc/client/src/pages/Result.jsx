@@ -13,7 +13,7 @@ function Result() {
     const analyseSymptom = async () => {
       try {
         // CHANGE THIS URL TO YOUR IP
-        const response = await fetch('http://172.20.10.3:5000/api/symptom/analyse', {
+       const response = await fetch('https://voicedoc-mzxb.onrender.com/api/symptom/analyse', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ symptom })
